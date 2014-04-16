@@ -1,0 +1,20 @@
+2014/04/14 08:39:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in /data/web/skcyii/yii-1.1.14.f0fee9/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /data/web/skcyii/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /data/web/skcyii/yii-1.1.14.f0fee9/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /data/web/skcyii/yii-1.1.14.f0fee9/framework/base/CModule.php(387): CDbConnection->init()
+#3 /data/web/skcyii/yii-1.1.14.f0fee9/framework/cli/commands/MigrateCommand.php(442): CModule->getComponent('db')
+#4 /data/web/skcyii/yii-1.1.14.f0fee9/framework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /data/web/skcyii/yii-1.1.14.f0fee9/framework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /data/web/skcyii/yii-1.1.14.f0fee9/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /data/web/skcyii/yii-1.1.14.f0fee9/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /data/web/skcyii/yii-1.1.14.f0fee9/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /data/web/skcyii/yii-1.1.14.f0fee9/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /data/web/skcyii/yii-1.1.14.f0fee9/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#12 /data/web/skcyii/yii-1.1.14.f0fee9/framework/yiic.php(33): CApplication->run()
+#13 /data/web/trackstar/protected/yiic.php(7): require_once('/data/web/skcyi...')
+#14 /data/web/trackstar/protected/yiic(4): require_once('/data/web/track...')
+#15 {main}
+---
+2014/04/14 08:40:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trackstar.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
