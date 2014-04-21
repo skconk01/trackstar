@@ -1,4 +1,6 @@
 <?php
+
+
 class DbTest extends CTestCase
 {  
      public function testConnection()
