@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="YII test" default="build">
- <target name="build" depends="prepare,phpunit"/>
+ <target name="build" depends="prepare,phpunit,lint"/>
 
  <target name="clean" description="Cleanup build artifacts">
   <delete dir="${basedir}/build/coverage"/>
