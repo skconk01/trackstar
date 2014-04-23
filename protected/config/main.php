@@ -58,7 +58,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=trackstar',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'xcat1nhat',
+			'password' => 'cat1nhat',
 			'charset' => 'utf8',
 		),
 		
